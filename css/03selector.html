@@ -1,0 +1,47 @@
+<!-- 03selector.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03selector</title>
+    <style>
+        * {
+            color: violet;
+        }
+
+        h1 {
+            color: red
+        }
+
+        #ADAMS {
+            color: blue
+        }
+
+        .MILLER {
+            background-color: aqua
+        }
+
+        h5,
+        #KING,
+        .JAMES {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>element selector: html tag를 선택하는 선택자: 단점은 같은 태그 모든 곳에 적용됨</h1>
+    <h2 id="ADAMS">id selector: 특정 id를 가진 부분에만 적용</h2>
+    <h2>id는 html element를 고유하게 지칭하는 것 & 하나의 html 문서에 id 중복 X</h2>
+    <h3 class="MILLER">class selector: 같은 css를 적용하고 싶은 부분들을 하나로 반 편성</h3>
+    <h4 class="MILLER">바로 위 라인과 같은 css 적용됨</h4>
+    <h5>group selector: 여러개를 묶어서 하나의 css를 적용하는 개념</h5>
+    <h2 id="KING">group selector 적용</h2>
+    <h2 class="JAMES">group selector 적용</h2>
+    <h1>universal selector: 전체 html element에 적용되는 선택자</h1>
+    <h2>universal selector 선언 있어도, 다른 selector가 있으면 다른 selector를 먼저 적용함</h2>
+</body>
+
+</html>
