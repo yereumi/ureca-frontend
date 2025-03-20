@@ -1,0 +1,78 @@
+<!-- 03list.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1"> <!-- tag의 구성: TagName, Attribute=Value-->
+        <tr> <!-- table row: 1줄을 의미-->
+            <td>1</td>
+            <td>2</td>
+            <td>3</td> <!-- table data: 1칸을 의미-->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td> <!-- table data: 1칸을 의미-->
+        </tr>
+    </table>
+    <hr> <!-- 줄 긋기 -->
+    <hr width="70%">
+    <hr width="70%" align="left">
+    <table border="1">
+        <caption>caption: 테이블의 제목</caption>
+        <cogroup>
+            <col style="width:150px">
+            <col style="width:150px">
+            <col style="width:150px">
+        </cogroup>
+        <tr>
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="3">7</td> gi<td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <thead> <!-- 주제 -->
+            <tr>
+                <th>No</th>
+                <th>이름</th>
+                <th>전화번호</th> <!-- table head-->
+            </tr>
+        </thead>
+        <tbody> <!-- 본문 -->
+            <tr>
+                <td>1</td>
+                <td>홍길동</td>
+                <td>010-1234-5678</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>강감찬</td>
+                <td>010-1234-5679</td>
+            </tr>
+        </tbody>
+        <tfoot> <!-- 마무리 -->
+            <tr>
+                <td colspan="3">문의: 123abc@gmail.com</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
