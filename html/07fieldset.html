@@ -1,0 +1,29 @@
+<!-- 07fieldset.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+</head>
+
+<body>
+    <h1>fieldset: html elements를 묶어주는 역할</h1>
+    <fieldset>
+        <legend>로그인</legend> <!-- legend: fieldset title -->
+        <p> <!-- p: 문단 태그 -->
+            <label for="uid">User Name:</label>
+            <!-- label: 이름표, for: 어떤 html elemnt를 위한 label인가를 표시 -->
+            <input type="text" id="uid" name="uid" maxlength="10" placeholder="아이디 입력">
+            <!-- id: 현재 html page에서 특정 element에 접근할 때 사용하는 element 이름-->
+            <!-- name: element에 입력한 값을 서버에서 꺼낼 때 사용하는 element 이름-->
+        </p>
+        <p>
+            <label for="upwd">User Password:</label>
+            <input type="text" id="upwd" name="upwd" maxlength="20" placeholder="비밀번호 입력">
+        </p>
+    </fieldset>
+</body>
+
+</html>
