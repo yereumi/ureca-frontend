@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let study = ['html','css','javascript','jquery','react','nodejs'];
+
+        // slice
+        console.log(`반환 : ` + study.slice(2));
+        console.log(`원본 : ${study}`);
+
+        console.log(`반환 : ` + study.slice(1,4)); // 1부터 4의 전까지
+        console.log(`원본 : ${study}`);
+
+        // splice
+        let js = study.splice(2);
+        console.log(`반환 : ${js}`);
+        console.log(`변경 : ${study}`);
+
+        let jquery = js.splice(1, 1);
+        console.log(`반환 : ${jquery}`);
+        console.log(`변경 : ${js}`);
+
+        let modernjs = js.splice(1, 0, 'typescript');
+        console.log(`반환 : ${modernjs}`);
+        console.log(`변경 : ${js}`);
+    </script>
+</body>
+</html>

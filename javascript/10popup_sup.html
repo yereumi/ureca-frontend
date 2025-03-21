@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10popup_sup.html - parent</title>
+</head>
+<body>
+    <h1>부모 창의 TEXT</h1>
+    <input type="text" id="ALLEN" placeholder="자식 창에서 글자를 넣어줄 예정">
+    <button onclick="newOpen();">팝업 창을 열자</button>
+    <script>
+        function newOpen() {
+            window.open('./10popup_sub.html', 'popchild', 'width=300, height=300');
+        }
+
+        function parentFunction() {
+            alert("call parentFunction() from child");
+        }
+    </script>
+</body>
+</html>

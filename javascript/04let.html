@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04let.html</title>
+</head>
+<body>
+    <script>
+        var var1 = "hello";
+        let let1 = "welcome";
+        {
+            var var1 = "nice to meet you";
+            let let1 = "thank you";
+            console.log(var1);
+            console.log(let1);
+            let let2 = "hi";
+        }
+        console.log("=================");
+        console.log(var1);
+        console.log(let1);
+        console.log("=================");
+        var var1 = "third var call"; // var1은 계속 엎어쳐짐
+        // let let1 = "third let call"; // 같은 영역에서 두번 선언 X
+        console.log(var1);
+        console.log(let1);
+        // console.log(let2); // 선언 블럭을 벗어나서 접근 안됨
+    </script>
+</body>
+</html>
